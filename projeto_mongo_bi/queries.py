@@ -62,10 +62,6 @@ def get_1_data():
     return convert_object_ids(get_data_by_collection_name("1", projection))
 
 
-def get_propose_data():
-    projection = {'ID': 1, '_id': 1, 'public_identification': 1,
-                  'is_deleted': 1, 'is_active': 1, 'calc_id': 1}
-    return convert_object_ids(get_data_by_collection_name("Propose", projection))
 
 
 def get_2_data():
@@ -74,49 +70,9 @@ def get_2_data():
     return convert_object_ids(get_data_by_collection_name("2", projection))
 
 
-def get_financial_transaction_data():
-    projection = {'ID': 1, '_id': 1, 'amount': 1, 'date': 1}
-    return convert_object_ids(get_data_by_collection_name("FinancialTransaction", projection))
-
-
-def get_breakeven_point_data():
-    projection = {'ID': 1, '_id': 1, 'month_number': 1,
-                  'year_number': 1, 'breakeven_percentage_value': 1, 'fixed_cost_value': 1}
-    return convert_object_ids(get_data_by_collection_name("BreakevenPoint", projection))
-
-
-def get_financial_account_data():
-    projection = {'ID': 1, '_id': 1, 'description': 1, 'role': 1,
-                  'active': 1, 'cash_account': 1, 'creation_time': 1}
-    return convert_object_ids(get_data_by_collection_name("FinancialAccount", projection))
-
 
 def get_3_data():
     projection = {'ID': 1, '_id': 1, '3_name': 1, 'activated': 1,
                   'deleted': 1, 'country_id': 1, '3_mail': 1}
-    return convert_object_ids(get_data_by_collection_name("3", projection))
 
 
-def get_holdprint_account_data():
-    projection = {'ID': 1, '_id': 1, '3_name': 1,
-                  'country': 1, 'activated': 1}
-    return convert_object_ids(get_data_by_collection_name("HoldprintAccount", projection))
-
-
-def get_holdprint_user_data():
-    projection = {'ID': 1, '_id': 1, 'activated': 1, 'user_profile_id': 1, 'role': 1,
-                  'first_name': 1, 'last_name': 1,
-                  'activated': 1, 'last_login_time': 1, 'email': 1}
-    return convert_object_ids(get_data_by_collection_name("HoldprintUsers", projection))
-
-
-def get_costmemento_data():
-    projection = {'ID': 1, '_id': 1, 'name': 1, 'public_identification': 1, 'total_price': 1,
-                  'creation_time': 1,
-                  'lock': 1, 'total_profit_percentual': 1}
-    return convert_object_ids(get_data_by_collection_name("CostMemento", projection))
-
-
-def get_costcentergroup_data():
-    projection = {'ID': 1, 'lock': 1, 'cost_centers': 1, 'creation_date': 1}
-    return convert_object_ids(get_data_by_collection_name("CostCenterGroup", projection))
